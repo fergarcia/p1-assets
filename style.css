@@ -1,0 +1,210 @@
+@font-face{
+font-family: 'karla';
+src: url('fonts/Karla-Bold.ttf')
+}
+
+@font-face{
+font-family: 'karlaregular';
+src: url('fonts/Karla-Regular.ttf')
+}
+
+
+div{
+    background-color: #000000;
+    width: 1727px;
+    height: 95px;
+    border:  #000000;
+    padding: 8px;
+    margin:0px;
+}
+
+.navigation{
+  font-size:20px;
+  font-family: karla;
+  background: black;
+  float: right;
+  color:white;
+  list-style-type: none;
+  margin: 0 0px 0px 0; 
+  top: 8px;
+right: 16px;
+font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+text-decoration: none;
+color: #b64036;
+}
+
+li{
+  list-style-type: none;
+  background-color: #000000;
+  display: inline;
+  text-align: right;
+  overflow: hidden;
+  margin: 0 20px 0px 0; 
+color:white;
+padding: 8px;
+}
+
+@font-face{
+font-family: 'pacifico';
+src: url('fonts/Pacifico.ttf')
+}
+
+.section-banner{
+   background-image: url('images/kayak-bkgd.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    padding: 180px 80px;
+    border: 3px solid pink;
+    background-size:cover;
+}
+
+.enjoy{
+font-family: karlaregular;
+text-transform: uppercase;
+color: white;
+font-size: 20px;
+}
+
+.site-title{
+  text-align:center;
+  font-size:30px;
+  color:white;
+   font-family: pacifico, comic, cursive;
+}
+
+h1 span{
+margin:auto; 
+font-size:60px;
+width:200px;
+color:white;
+text-align:center;
+ word-spacing:5px;
+ padding: 15px 15px;
+  font-family: pacifico, comic, cursive;
+}
+
+.one{
+background: black;
+opacity: 0.5;
+border: 1px black;
+padding: 8px 8px;
+color: white;
+font-size: 20px; 
+font-family: karlaregular;
+}
+
+
+.sign-up-btn{
+  background-color: rgb(232, 30, 73);
+  padding: 15px 15px;
+  border-radius: 20px;
+  border:none;
+ margin: 15px 15px;
+ color:white;
+ font-family: karla;
+font-size: 20px;
+text-align: center;
+}
+
+
+#image1 {
+    display:block;
+    margin: auto;
+    width: 1800px;
+    height:1400px;
+    background-blend-mode: lighten;
+}
+
+h2{
+  text-align: center;
+  font-size:40px;
+  font-family: pacifico, comic, cursive;
+  }
+
+p{
+text-align: center;
+font-size:20px;
+font-family: karlaregular;
+}
+ 
+.about-images{
+background-color: white;
+border: 5px solid pink;
+margin-left: 180px;
+display: block;
+width: 1500px;
+height: 350px;
+
+} 
+
+.Kayak-in-the-sunset{
+  position: absolute;
+  left: 210px;
+  width: 450px;
+  height: 300px;
+  padding: 10px 10px;
+
+}
+
+.Coffee-mug{
+  position: absolute;
+  right:620px;
+  width: 450px;
+  height: 300px;
+  padding: 10px 10px;
+
+}
+
+.Girl-in-kayak{
+  position: absolute;
+  right:120px;
+  width: 450px;
+  height: 300px;
+  padding: 10px 10px;
+}
+
+.includes{
+  text-align: left;
+  margin-left: 10px;
+  font-size:20px;
+}
+
+
+
+.number{
+  color:#b64036;
+  text-decoration: underline;
+}
+
+.footer{
+background: black;
+height: 300px;
+padding: 10px;
+text-align: left;
+}
+
+.last {
+   color:white;
+   text-align: left;
+  font-family: karlaregular; 
+}
+
+.address{
+  text-decoration: underline;
+}
+
+.intersection{
+ color: dimgray;
+ font-size: 16px;
+text-align: left;
+}
+
