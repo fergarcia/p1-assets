@@ -14,7 +14,9 @@ src: url('fonts/Pacifico.ttf')
 }
 
 body{
-  font-size: 16px}
+  font-size: 16px;
+  line-height:  ;
+   }
 
 .logo-section{
   background-color: black;
@@ -26,6 +28,7 @@ body{
 padding: 8px;
 height:50px;
 float: left;
+max-width: 55%;
 }
 
 .navigation{
@@ -63,40 +66,44 @@ color:white;
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
-    padding: 60px 60px;
+    padding: 3em 15em;
     background-size:cover;
 }
 
 .enjoy{
 font-family: karlaregular;
 text-transform: uppercase;
+margin: .5em auto;
 color: white;
-font-size: 1em;
+font-size: 1.5em;
 }
 
 .site-title{
   text-align:center;
   font-size:1.5em;
+  margin: .5em auto;
   color:white;
    font-family: pacifico;
+   padding-top: 0.5em;
 }
 
 h1 span{
 margin:auto;
-font-size:2em;
+font-size:3em;
+text-shadow: 2px 2px #999 ;
 width:200px;
 color:white;
 text-align:center;
  word-spacing:5px;
- padding: 15px 15px;
+ padding-top: 4em;
   font-family: pacifico;
 }
 
 .one{
-background: black;
+background: black ;
 opacity: 0.5;
-border: 1px black;
-padding: 8px 8px;
+margin: auto;
+padding: 0.5em;
 color: white;
 font-size: 1em; 
 font-family: karlaregular;
@@ -104,10 +111,11 @@ font-family: karlaregular;
 
 .sign-up-btn{
   background-color: rgb(232, 30, 73);
-  padding: 15px 15px;
-  border-radius: 20px;
+  padding: .75em;
+  border-radius: 2em;
   border:none;
- margin: 15px 15px;
+  text-transform: uppercase; 
+  margin: 1em auto;
  color:white;
  font-family: karla;
 font-size: 1em;
@@ -150,8 +158,8 @@ justify-content: space-around;
 
 .includes{
   text-align: left;
-  margin-left: 10px;
-  font-size:20px;
+  margin-left: 1em;
+  font-size:1em;
 }
 
 .container{
@@ -190,6 +198,12 @@ td {
   padding: 15px;
   border: 3px solid #c8c8c8;
   }
+
+.map{
+    display: block;
+    margin: 0 auto;
+}
+
 
 
 .number{
