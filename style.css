@@ -1,23 +1,211 @@
 @font-face{
 font-family: 'karla';
-src: url('fonts/Karla-Bold.ttf')
+src: url('fonts/Karla-Bold.ttf');
+font-weight: normal;
 }
 
 @font-face{
 font-family: 'karlaregular';
-src: url('fonts/Karla-Regular.ttf')
+src: url('fonts/Karla-Regular.ttf');
+font-weight: normal;
 }
 
-@font-face{
-font-family: 'pacifico';
-src: url('fonts/Pacifico.ttf')
+@font-face {
+  font-family: 'pacifico'; 
+  src: url('fonts/Pacifico.ttf');
+  font-weight: normal;
 }
 
 body{
   font-size: 16px;
-  line-height:  ;
-   }
+  line-height: 1.5;
+  margin: 0;
+}
 
+.logo-section{
+  background-color: black;
+  padding: 5px;
+  align-content: center;
+  text-align: center;
+}
+
+#perfect-paddles-logo{
+ height:50px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style-type: none;
+  font-family: karla;
+  display: inline;
+  margin: 0 20px 0px 0; 
+  color:white;
+}
+
+.section-banner{
+  background-image: url('images/kayak-bkgd.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  margin: auto;
+  background-size:cover;
+  padding: 1em 0em;
+}
+
+.section-banner .enjoy{
+  font-family: karlaregular;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 0;
+  font-size: 0.7em;
+}
+
+.section-banner .site-title{
+  margin: 0em 1em 1em 1em;
+  text-align:center;
+  font-size:1.5em;
+  color:white;
+  font-family: pacifico;
+  padding-top: 0.5em;
+}
+
+h1 span{
+  margin:auto;
+  font-size:2em;
+  text-shadow: 2px 2px #999 ;
+  width:200px;
+  color:white;
+  text-align:center;
+  word-spacing:5px;
+  font-family: pacifico;
+}
+
+.section-banner .one{
+  background: black ;
+  opacity: 0.5;
+  margin: auto;
+  padding: 0.5em;
+  color: white;
+  font-size: 1em; 
+  font-family: karlaregular;
+}
+
+.section-banner .sign-up-btn{
+  background-color: #b64036;
+  padding: .75em;
+  border-radius: 2em;
+  border:none;
+  text-transform: uppercase; 
+  margin: 1em auto;
+  color:white;
+  font-family: karla;
+  font-size: 1em;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size:1.5em;
+  font-family: pacifico;
+  }
+
+p{
+  text-align: center;
+  font-size:1em;
+  font-family: karlaregular;
+}
+ 
+
+.about-images img{
+    max-width: 100%;
+    padding: 2%;
+}
+
+.includes{
+ text-align: center;
+  font-size:1em;
+  font-family: karlaregular;
+}
+
+.rentals-pricing{
+  font-family: karlaregular;
+  font-size: 1em;
+}
+
+.table-rentals{
+  max-width:100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1em;  
+  }
+
+.table-rentals thead{
+  background-color:#e6e6e6;
+  font-family: karla ;
+}
+
+td {
+  padding: 15px;
+  border: 3px solid #c8c8c8;
+  }
+
+.map{
+  display: block;
+  margin: 0 auto;
+}
+
+.number{
+  color:#b64036;
+  text-decoration: underline;
+}
+
+.footer{
+  background: black;
+  height: 300px;
+  text-align: center;
+}
+
+.footer .last {
+  color:white;
+  font-family: karlaregular; 
+}
+
+.footer .address{
+  text-decoration: underline;
+}
+
+.footer .intersection{
+  color: dimgray;
+  font-size: 1em;
+  text-align: center;
+}
+
+.footer .social {
+  color: white;
+  word-spacing: 0.4em;
+}
+
+.footer .social span {
+ display: none;
+}
+
+
+
+@media screen and (min-width: 700px) {
+.about-images{
+  flex-direction: column;
+  align-items: center;
+}
+.container{
+  flex-direction: column;
+  align-items:center;
+}
+
+@media screen and (min-width: 1024px) {
 .logo-section{
   background-color: black;
   padding: 5px;
@@ -37,45 +225,26 @@ max-width: 55%;
   color:white;
   list-style-type: none;
   height: 50px;
-float:right;
-padding: 8px;
+  float:right;
+  padding: 8px;
 }
 
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
-a:hover{
-text-decoration: none;
-color: #b64036;
-}
-
-li{
-  list-style-type: none;
-  background-color: #000000;
-  display: inline;
-  text-align: right;
-  margin: 0 20px 0px 0; 
-color:white;
-}
 
 .section-banner{
-   background-image: url('images/kayak-bkgd.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-align: center;
-    padding: 3em 15em;
-    background-size:cover;
+  background-image: url('images/kayak-bkgd.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  padding: 3em 15em;
+  background-size:cover;
 }
 
-.enjoy{
-font-family: karlaregular;
-text-transform: uppercase;
-margin: .5em auto;
-color: white;
-font-size: 1.5em;
+.section-banner .enjoy{
+  font-family: karlaregular;
+  text-transform: uppercase;
+  margin: .5em auto;
+  color: white;
+  font-size: 1em;
 }
 
 .site-title{
@@ -88,38 +257,38 @@ font-size: 1.5em;
 }
 
 h1 span{
-margin:auto;
-font-size:3em;
-text-shadow: 2px 2px #999 ;
-width:200px;
-color:white;
-text-align:center;
- word-spacing:5px;
- padding-top: 4em;
+  margin:auto;
+  font-size:3em;
+  text-shadow: 2px 2px #999 ;
+  width:200px;
+  color:white;
+  text-align:center;
+  word-spacing:5px;
+  padding-top: 4em;
   font-family: pacifico;
 }
 
 .one{
-background: black ;
-opacity: 0.5;
-margin: auto;
-padding: 0.5em;
-color: white;
-font-size: 1em; 
-font-family: karlaregular;
+  background: black ;
+  opacity: 0.5;
+  margin: auto;
+  padding: 0.5em;
+  color: white;
+  font-size: 1em; 
+  font-family: karlaregular;
 }
 
-.sign-up-btn{
-  background-color: rgb(232, 30, 73);
+.section-banner .sign-up-btn{
+  background-color: #b64036;
   padding: .75em;
   border-radius: 2em;
   border:none;
   text-transform: uppercase; 
   margin: 1em auto;
- color:white;
- font-family: karla;
-font-size: 1em;
-text-align: center;
+  color:white;
+  font-family: karla;
+  font-size: 1em;
+  text-align: center;
 }
 
 h2{
@@ -129,69 +298,69 @@ h2{
   }
 
 p{
-text-align: center;
-font-size:1em;
-font-family: karlaregular;
+  text-align: center;
+  font-size:1em;
+  font-family: karlaregular;
 }
  
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #b64036;
+}
+
+
 .about-images{
-display:flex;
-justify-content: space-around;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex: 1 100%;
 }
 
-.Kayak-in-the-sunset{
-  width: 400px;
-  height: 300px;
-  
-}
-
-.Coffee-mug{
-  width: 400px;
-  height: 300px;
-  
-}
-
-.Girl-in-kayak{
-  width: 400px;
-  height: 300px;
-}
+.about-images img{
+  width: 30%;
+  }
 
 .includes{
-  text-align: left;
-  margin-left: 1em;
+ text-align: left;
   font-size:1em;
+  font-family: karlaregular;
 }
 
 .container{
-  overflow:auto;
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-around;
+  flex: 1 100%;
 }
-
 .prices{
-  float:left;
-  width:40%;
-  padding-left: 5% ; 
-  padding-right:5% ; 
+  width:50%;
 }
 
 .rentals-pricing{
   font-family: karlaregular;
-  font-size: 1em;
-  float: right;
-  width: 50%;
-  
+  font-size: 20px;
+  width: 44%;
+  font-size: 1em;  
 }
 
 .table-rentals{
-width: 450px;
-height: 300px;
- border-collapse: collapse;
-    text-align: center;
-    font-size: 1em;  
+  width: 450px;
+  height: 300px;
+  border-collapse: collapse;
+  text-align: center;
+  
   }
 
 .table-rentals thead{
   background-color:#e6e6e6;
-   font-family: karla ;
+  font-family: karla ;
 }
 
 td {
@@ -200,11 +369,9 @@ td {
   }
 
 .map{
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
-
-
 
 .number{
   color:#b64036;
@@ -212,30 +379,49 @@ td {
 }
 
 .footer{
-background: black;
-height: 300px;
-padding: 10px;
-text-align: left;
+  background: black;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex: 1 100%;
+
+}
+.footer .contact{
+width:50%;
 }
 
-.last {
-   color:white;
-   text-align: left;
+.footer .last {
+  color:white;
   font-family: karlaregular; 
+  text-align: left;
 }
 
-.address{
+.footer .address{
   text-decoration: underline;
 }
 
-.intersection{
- color: dimgray;
+.footer .intersection{
+  color: dimgray;
+  font-size: 1em;
+  text-align: left;
+}
+
+.footer .social {
+  color: white;
+  text-align: start;
+  width:11%;
+  padding:4%;
  font-size: 1em;
-text-align: left;
 }
 
-
-@media (min-width: 1140px) {
-
+.footer .social span {
+ font-family: karla;
+ display: inline-block;
+ text-align: right;
 }
+
+.footer .social .fa{
+  display: block;
+  padding:8px;
+
 }
