@@ -111,6 +111,7 @@ h2{
   text-align: center;
   font-size:1.5em;
   font-family: pacifico;
+   color: #646464;
   }
 
 p{
@@ -119,10 +120,10 @@ p{
   font-family: karlaregular;
 }
  
-
 .about-images img{
     max-width: 100%;
     padding: 2%;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 .includes{
@@ -153,9 +154,10 @@ td {
   border: 3px solid #c8c8c8;
   }
 
-.map{
+iframe{
   display: block;
-  margin: 0 auto;
+  margin: 9%;
+  border: 2px solid #c8c8c8;
 }
 
 .number{
@@ -194,20 +196,144 @@ td {
 }
 
 
+@media screen and (min-width: 600px) { 
 
-@media screen and (min-width: 700px) {
-.about-images{
-  flex-direction: column;
-  align-items: center;
-}
-.container{
-  flex-direction: column;
-  align-items:center;
-}
-
-@media screen and (min-width: 1024px) {
 .logo-section{
   background-color: black;
+  padding: 5px;
+  overflow: auto;
+}
+
+#perfect-paddles-logo{
+ padding: 8px;
+ height:50px;
+ float: left;
+ max-width: 55%;
+}
+
+.navigation{
+  font-size:1em;
+  font-family: karla;
+  color:white;
+  list-style-type: none;
+  height: 50px;
+  float:right;
+  padding: 8px;
+}
+
+.about-images{
+ margin: 0%;
+ overflow: auto;
+ } 
+ 
+.about-images .Kayak-in-the-sunset{
+ width: 28%;
+ padding: 2%;
+ float: left;
+} 
+
+.about-images .Coffee-mug{
+ width: 28%;
+ padding: 2%;
+  margin-left: 3%;
+}
+
+ .about-images .Girl-in-kayak{
+ width: 28%;
+ padding: 2%;
+ float: right;
+ margin-right: 0%;
+ }
+
+.container{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: space-around;
+  flex: 1 100%;
+}
+
+.includes{
+ text-align: left;
+  font-size:1em;
+  font-family: karlaregular;
+  margin: 2%;
+}
+
+.prices{
+  width:48%;
+  text-align: left;
+  margin-left: 2%;
+}
+
+.rentals-pricing{
+  font-family: karlaregular;
+  width: 44%;
+  font-size: 16px;  
+  margin-left: 3%;
+}
+
+.map{
+  width: 100%;
+  height: 300px ;
+   border: 2px solid #c8c8c8;
+  margin: 2%;
+}
+
+ .footer{
+  background: black;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex: 1 100%;
+}
+   
+.footer .contact{
+ width:50%;
+ margin-left: 2%;
+}
+
+.footer .last {
+  color:white;
+  font-family: karlaregular; 
+  text-align: left;
+}
+
+.footer .address{
+  text-decoration: underline;
+}
+
+.footer .intersection{
+  color: dimgray;
+  font-size: 1em;
+  text-align: left;
+}
+
+.footer .social {
+  color: white;
+  text-align: start;
+  width:17%;
+  padding:4%;
+ font-size: 1em;
+}
+
+.footer .social span{
+ font-family: karla;
+ display: inline-block;
+ text-align: right;
+}
+
+.footer .social .fa{
+  display: block;
+  padding:8px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+.logo-section{
+ background-color: black;
   padding: 5px;
   overflow: auto;
 }
@@ -228,7 +354,6 @@ max-width: 55%;
   float:right;
   padding: 8px;
 }
-
 
 .section-banner{
   background-image: url('images/kayak-bkgd.jpg');
@@ -294,6 +419,7 @@ h1 span{
 h2{
   text-align: center;
   font-size:1.5em;
+  color:#646464;
   font-family: pacifico;
   }
 
@@ -302,7 +428,6 @@ p{
   font-size:1em;
   font-family: karlaregular;
 }
- 
 
 a{
   text-decoration: none;
@@ -314,23 +439,26 @@ a:hover{
   color: #b64036;
 }
 
-
 .about-images{
-  display:flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex: 1 100%;
+  margin: 0%;
+  overflow: auto;
+ } 
+ 
+.about-images .Kayak-in-the-sunset{
+ width: 28%;
+ float: left;
 }
 
-.about-images img{
-  width: 30%;
-  }
-
-.includes{
- text-align: left;
-  font-size:1em;
-  font-family: karlaregular;
+.about-images .Coffee-mug{
+ width: 28%;
+ margin-left: 3%;
+ float: center;
 }
+
+ .about-images .Girl-in-kayak{
+ width: 28%;
+ float: right;
+ }
 
 .container{
   display:flex;
@@ -339,13 +467,20 @@ a:hover{
   justify-content: space-around;
   flex: 1 100%;
 }
+
 .prices{
-  width:50%;
+  width:45%;
 }
+
+.includes{
+ text-align: left;
+  font-size:1em;
+  font-family: karlaregular;
+} 
 
 .rentals-pricing{
   font-family: karlaregular;
-  font-size: 20px;
+  font-size: 16px;
   width: 44%;
   font-size: 1em;  
 }
@@ -355,7 +490,6 @@ a:hover{
   height: 300px;
   border-collapse: collapse;
   text-align: center;
-  
   }
 
 .table-rentals thead{
@@ -368,14 +502,16 @@ td {
   border: 3px solid #c8c8c8;
   }
 
-.map{
-  display: block;
-  margin: 0 auto;
-}
-
 .number{
   color:#b64036;
   text-decoration: underline;
+}
+
+.map{
+  max-width: 100%;
+  height: 300px ;
+  display: block;
+  margin: auto;
 }
 
 .footer{
@@ -384,10 +520,11 @@ td {
   display: flex;
   justify-content: space-between;
   flex: 1 100%;
-
 }
+
 .footer .contact{
 width:50%;
+margin-left: 2%;
 }
 
 .footer .last {
@@ -414,7 +551,7 @@ width:50%;
  font-size: 1em;
 }
 
-.footer .social span {
+.footer .social span{
  font-family: karla;
  display: inline-block;
  text-align: right;
@@ -423,5 +560,6 @@ width:50%;
 .footer .social .fa{
   display: block;
   padding:8px;
+  }
 
 }
